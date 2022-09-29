@@ -173,6 +173,11 @@ a {
 		margin-left: 0;
 		text-align: center;
 	}
+
+		#portfolio,
+		#skills {
+			padding-top: 20px;
+		}
 }
 
 @media screen and (max-width: 500px) {

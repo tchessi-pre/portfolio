@@ -16,13 +16,10 @@
 html {
 	scroll-behavior: smooth;
 }
+
 body {
 	margin: 0;
 	padding: 0;
-}
-
-.bloc-page {
-	margin: 0;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -30,7 +27,7 @@ body {
 
 #myVideo {
 	object-fit: cover;
-	/* width: 100vw; */
+	width: 100vw;
 	height: 100vh;
 	z-index: -2;
 	position: relative;
@@ -52,13 +49,17 @@ body {
 .hello {
 	text-transform: uppercase;
 	font-size: 3vw;
-	color: rgb(250, 250, 250);
+	color: #ffffff;
 	text-shadow: 4px 4px 5px rgba(50, 49, 49, 0.87);
+	font-style: italic;
+	font-weight: 700;
 }
+
 .hello span {
-	color: #ead468;
 	font-size: 2em;
 	font-weight: 600;
+	color: #ffffff;
+	text-shadow: 4px 4px 5px rgba(16, 16, 15, 0.87);
 }
 
 .work {
@@ -84,20 +85,23 @@ body {
 
 .about-section {
 	width: 100%;
-	height: 100vh;
+	/* height: 100vh; */
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	padding: 0 50px;
 }
+
 .about-content {
 	display: flex;
 	align-items: flex-start;
 	margin-top: 20px;
 }
+
 .about-content p {
-	font-size: 1.4rem;
+	/* font-size: 1.4rem; */
 	font-style: italic;
+	font-weight: 400;
 	padding-right: 30px;
 	overflow: hidden;
 	text-align: justify;
@@ -106,6 +110,7 @@ body {
 .about-text {
 	margin-left: 20px;
 }
+
 h3 {
 	text-transform: uppercase;
 	font-size: 1.2rem;
@@ -149,18 +154,20 @@ a {
 	padding: 19px 22px;
 	transition: all 0.2s ease;
 }
+
 .cta:before {
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
 	display: block;
-	border-radius: 28px;
+	/* border-radius: 28px; */
 	background: rgba(255, 171, 157, 0.5);
-	width: 56px;
-	height: 56px;
+	width: 60px;
+	height: 60px;
 	transition: all 0.3s ease;
 }
+
 .cta span {
 	position: relative;
 	font-size: 16px;
@@ -170,6 +177,7 @@ a {
 	text-transform: uppercase;
 	vertical-align: middle;
 }
+
 .cta svg {
 	position: relative;
 	top: 0;
@@ -182,13 +190,16 @@ a {
 	transform: translateX(-5px);
 	transition: all 0.3s ease;
 }
+
 .cta:hover:before {
 	width: 100%;
 	background: #ffab9d;
 }
+
 .cta:hover svg {
 	transform: translateX(0);
 }
+
 .cta:active {
 	transform: scale(0.96);
 }
@@ -212,26 +223,49 @@ a {
 #myBtn:hover {
 	filter: opacity(1);
 }
+
 @media screen and (max-width: 745px) {
 	.topnav a {
 		display: none;
 	}
+
 	.topnav a.icon {
 		float: right;
 		display: block;
 	}
+
+	.downloadcv {
+		margin-top: 25px;
+	}
+
+	.about-content p {
+		font-size: 14px;
+	}
+
 	a.myhome {
 		visibility: hidden;
 	}
+
 	.about-img {
 		display: none;
 	}
+
 	.downloadcv {
 		text-align: center;
 	}
 
 	.about-section {
 		height: 70vh;
+		padding: 0 10px;
+	}
+
+	#myBtn {
+		bottom: 30;
+		right: 15;
+	}
+
+	.presentation {
+		left: 0;
 	}
 }
 
@@ -241,11 +275,13 @@ a {
 		right: 0;
 		top: 0;
 	}
+
 	.topnav.responsive a {
 		float: none;
 		display: block;
 		text-align: left;
 	}
+
 	.presentation {
 		font-size: 50px;
 	}

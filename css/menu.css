@@ -1,13 +1,21 @@
 body {
 	background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 }
+.nav-title {
+	font-weight: 700;
+	text-transform: uppercase;
+}
 
+.nav-title::first-letter {
+	color: rgb(241, 198, 28);
+}
 .nav {
 	height: 50px;
 	width: 100%;
-	background-color: #4d4d4de2;
+	background-color: #333;
 	position: absolute;
 	padding: 0 70px;
+	top: 0;
 }
 
 .nav > .nav-header {
@@ -29,6 +37,7 @@ body {
 	display: inline;
 	float: right;
 	font-size: 18px;
+	text-transform: uppercase;
 }
 
 .nav > .nav-links > a {
@@ -49,12 +58,16 @@ body {
 
 
 
-@media (max-width: 680px) {
+@media (max-width: 775px) {
 	.nav > .nav-btn {
 		display: inline-block;
 		position: absolute;
 		right: 0px;
 		top: 0px;
+	}
+
+	.nav {
+		padding: 0;
 	}
 	.nav > .nav-btn > label {
 		display: inline-block;
@@ -64,7 +77,8 @@ body {
 	}
 	.nav > .nav-btn > label:hover,
 	.nav #nav-check:checked ~ .nav-btn > label {
-		background-color: rgba(0, 0, 0, 0.3);
+		background-color: #333;
+		transform: rotateX(160deg);
 	}
 	.nav > .nav-btn > label > span {
 		display: block;
@@ -92,7 +106,7 @@ body {
 		height: 0px;
 	}
 	.nav > #nav-check:checked ~ .nav-links {
-		height: calc(100vh - 50px);
+		height: 40vh;
 		overflow-y: auto;
 		text-align: center;
 	}
