@@ -14,7 +14,6 @@ root {
 
 body {
 	margin: 0;
-	min-height: 100vh;
 	font-family: 'Open Sans';
 	background: #fafafa;
 }
@@ -22,7 +21,9 @@ body {
 a {
 	color: inherit;
 }
-#portfolio, #skills {
+
+#portfolio,
+#skills {
 	padding-top: 50px;
 }
 
@@ -33,6 +34,7 @@ a {
 #contact {
 	padding-top: 35px;
 }
+
 .cards-wrapper {
 	display: grid;
 	justify-content: center;
@@ -47,10 +49,8 @@ a {
 .card {
 	font-family: 'Heebo';
 	--bg-filter-opacity: 0.5;
-	background-image: linear-gradient(
-			rgba(0, 0, 0, var(--bg-filter-opacity)),
-			rgba(0, 0, 0, var(--bg-filter-opacity))
-		),
+	background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)),
+			rgba(0, 0, 0, var(--bg-filter-opacity))),
 		var(--bg-img);
 	height: 15em;
 	width: 15em;
@@ -169,21 +169,23 @@ a {
 	.cards-wrapper {
 		grid-template-columns: 1fr;
 	}
+
 	.card-grid-space .project {
 		margin-left: 0;
-		text-align: center;
+		text-align: left;
 	}
 
-		#portfolio,
-		#skills {
-			padding-top: 20px;
-		}
+	#portfolio,
+	#skills {
+		padding-top: 20px;
+	}
 }
 
 @media screen and (max-width: 500px) {
 	.cards-wrapper {
-		padding: 4rem 2rem;
+		padding: 4rem 1rem;
 	}
+
 	.card {
 		max-width: calc(100vw - 4rem);
 	}
@@ -194,7 +196,17 @@ a {
 		display: block;
 		text-align: center;
 	}
+
 	.info h1 {
 		margin: 0;
+	}
+
+	.section-title {
+		margin-top: 40px;
+	}
+	
+	#portfolio,
+	#skills {
+		padding-top: 60px;
 	}
 }
