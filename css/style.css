@@ -58,7 +58,7 @@ body {
 .hello span {
 	font-size: 2em;
 	font-weight: 600;
-	color: #ffffff;
+	color: #03a9f4;
 	text-shadow: 4px 4px 5px rgba(16, 16, 15, 0.87);
 }
 
@@ -224,6 +224,7 @@ a {
 	filter: opacity(1);
 }
 
+
 @media screen and (max-width: 745px) {
 	.topnav a {
 		display: none;
@@ -293,7 +294,7 @@ a {
 
 @media screen and (max-width: 450px) {
 	#myBtn {
-		bottom: 7;
-		right: 20;
+		bottom: 4;
+		right: 5;
 	}
 }
